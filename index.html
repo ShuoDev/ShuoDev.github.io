@@ -6,7 +6,7 @@
 <title>ShuoDev</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
     --black: #000000;
@@ -19,7 +19,7 @@
     --iron-light: #9a9a9d;
     --soft-white: #f2f2f0;
     --white: #ffffff;
-    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    --font-display: 'Noto Serif SC', 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', serif;
     --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
   }
 
@@ -145,8 +145,10 @@
   }
 
   .hero-name{
-    font-size: clamp(4rem, 15vw, 10rem);
+	font-family: 'Noto Serif SC', serif;
+	font-size: clamp(4rem, 15vw, 10rem);
     font-weight: 900;
+    font-style: italic;
     line-height: 0.95;
     letter-spacing: -0.03em;
     color: var(--white);
@@ -156,6 +158,8 @@
     -webkit-text-fill-color: transparent;
     cursor: default;
     white-space: nowrap;
+    display: inline-block;
+    padding-right: 0.12em;
   }
 
   .hero-titles{
